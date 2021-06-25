@@ -1,0 +1,14 @@
+{
+  "name": "flexbox-website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass" : "sass --watch src/SCSS:src/css"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.35.1"
+  }
+}

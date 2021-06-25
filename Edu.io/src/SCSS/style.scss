@@ -1,0 +1,177 @@
+@use 'mixins' as *;
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    body{
+        font-family: Poppins;
+        margin: 0 3vw;
+    }
+    
+}
+
+
+
+//   PAGE 1 STYLES  STARTS
+
+.page-1{
+    height: 100vh;
+    border-bottom: 2px solid #000;
+}
+
+
+
+.navbar{
+    @include flexbox(row,space-between,center);
+
+    // border-bottom: 2px solid black  ;
+
+    &__logo{
+        @include font-s-w(3.8vw, 600);
+    }
+
+    &__menu{
+        @include flexbox(row,null,null);
+        gap: 2vw;
+        @include font-s-w(1.9vw, 300);
+
+        &-1{
+            font-weight: 700;
+            border-bottom: 0.4vw solid #64FCD9;
+
+        }
+        // &-2{}
+        // &-3{}
+        // &-4{}
+        [class ^="navbar__menu-"]{
+            cursor: pointer;
+            transition: all 0.1s ease;
+            &:hover{
+                border-bottom: 2px solid #64FCD9;
+            }
+        }
+    }
+}
+
+
+.main{
+    @include flexbox(row,space-between,center);
+
+    &__image{
+        width: 55%;
+        order: 2;
+        height: 85vh;
+        background-image: url("../Images/Astronaut.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center center;
+        // border: 2px solid skyblue;
+        // transform: translate(-50px);
+    }
+
+
+    &__text{
+
+        @include flexbox(column, null, null);
+        gap: 2.5vw;
+        width: 45%;
+        order: 1;
+        // border: 2px solid red;
+
+        &-heading{
+            @include font-s-w(3.8vw, 500);
+            line-height: 4.8vw;
+            text-align: justify;
+        }
+        &-description{
+            @include font-s-w(1.3vw, 300);
+            text-align: justify;
+        }
+        &-btn{
+            @include flexbox(row,null,null);
+            gap: 4vw;
+        }
+
+        [class ^= "flakes-"]{
+            z-index: -1;
+            background-size: contain;
+            background-repeat: no-repeat;
+            height: 5.5vw;
+            // width: 100%;
+        }
+        .flakes-1{
+            background-image: url('../Images/flakes-1.png');
+        }
+        
+        .flakes-2{
+            background-image: url('../Images/flakes-2.png');
+        }
+
+    }
+}
+
+
+
+.btn{
+    width: 17vw;
+    padding: 0.8vw 0;
+    white-space: nowrap;
+    background-color: black;
+    color: white;
+    text-align: center;
+    border-radius: 1vw;
+    @include font-s-w(2.8vw,400);
+    box-shadow: 0.6vw 0.6vw 0.3vw 0px rgba(0,0,0,0.38);
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+
+    &:hover{
+        transform: translate(0.6vw, 0.6vw);
+        box-shadow: 0 0 0.3vw 0px rgba(0,0,0,0.35);
+
+    }
+}
+
+
+//   PAGE 1 STYLES ENDS
+
+
+
+
+//   PAGE 2 STYLES  STARTS
+
+
+
+.page-2{
+    height: 100vh;
+    border-bottom: 2px solid black;
+}
+
+
+
+
+//   PAGE 2 STYLES ENDS
+
+
+
+
+//   PAGE 3 STYLES  STARTS
+
+
+
+.page-3{
+    height: 100vh;
+    border-bottom: 2px solid black;
+}
+
+
+
+//   PAGE 3 STYLES ENDS
+
+.page-4{
+    height: 100vh;
+    border-bottom: 2px solid black;
+}

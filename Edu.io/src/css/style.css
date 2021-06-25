@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+* body {
+  font-family: Poppins;
+  margin: 0 3vw;
+}
+
+.page-1 {
+  height: 100vh;
+  border-bottom: 2px solid #000;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar__logo {
+  font-size: 3.8vw;
+  font-weight: 600;
+}
+.navbar__menu {
+  display: flex;
+  flex-direction: row;
+  gap: 2vw;
+  font-size: 1.9vw;
+  font-weight: 300;
+}
+.navbar__menu-1 {
+  font-weight: 700;
+  border-bottom: 0.4vw solid #64FCD9;
+}
+.navbar__menu [class^=navbar__menu-] {
+  cursor: pointer;
+  transition: all 0.1s ease;
+}
+.navbar__menu [class^=navbar__menu-]:hover {
+  border-bottom: 2px solid #64FCD9;
+}
+
+.main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.main__image {
+  width: 55%;
+  order: 2;
+  height: 85vh;
+  background-image: url("../Images/Astronaut.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.main__text {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5vw;
+  width: 45%;
+  order: 1;
+}
+.main__text-heading {
+  font-size: 3.8vw;
+  font-weight: 500;
+  line-height: 4.8vw;
+  text-align: justify;
+}
+.main__text-description {
+  font-size: 1.3vw;
+  font-weight: 300;
+  text-align: justify;
+}
+.main__text-btn {
+  display: flex;
+  flex-direction: row;
+  gap: 4vw;
+}
+.main__text [class^=flakes-] {
+  z-index: -1;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 5.5vw;
+}
+.main__text .flakes-1 {
+  background-image: url("../Images/flakes-1.png");
+}
+.main__text .flakes-2 {
+  background-image: url("../Images/flakes-2.png");
+}
+
+.btn {
+  width: 17vw;
+  padding: 0.8vw 0;
+  white-space: nowrap;
+  background-color: black;
+  color: white;
+  text-align: center;
+  border-radius: 1vw;
+  font-size: 2.8vw;
+  font-weight: 400;
+  box-shadow: 0.6vw 0.6vw 0.3vw 0px rgba(0, 0, 0, 0.38);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.btn:hover {
+  transform: translate(0.6vw, 0.6vw);
+  box-shadow: 0 0 0.3vw 0px rgba(0, 0, 0, 0.35);
+}
+
+.page-2 {
+  height: 100vh;
+  border-bottom: 2px solid black;
+}
+
+.page-3 {
+  height: 100vh;
+  border-bottom: 2px solid black;
+}
+
+.page-4 {
+  height: 100vh;
+  border-bottom: 2px solid black;
+}
+
+/*# sourceMappingURL=style.css.map */
